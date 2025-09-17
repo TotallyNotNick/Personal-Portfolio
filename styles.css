@@ -1,0 +1,157 @@
+/**
+* Google Fonts
+**/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anybody:ital,wght@0,100..900;1,100..900&family=Geologica:wght@100..900&family=League+Gothic:wdth@75..100&family=Nokora:wght@100;300;400;700;900&display=swap');
+
+/**
+* Variable CSS
+**/
+:root {
+    --header-height: 3rem;
+    --font-semi: 600;
+    /* Colors */
+    --first-color: #6f5392;
+    --second-color: #000000;
+    /* Font */
+    --body-font: "Anybody", sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .75rem;
+    /* Margins */
+    --mb-2: 1rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+}
+
+/**
+* Default Screen Width
+**/
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: .875rem;
+    }
+}
+
+/**
+* Base CSS
+**/
+html {
+    scroll-behavior: smooth;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--second-color);
+    background-color: azure;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/**
+* Layout
+**/
+.grid {
+    max-width: 1024px;
+    display: grid;
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+
+/**
+* Nav Bar
+**/
+.navbar {
+    background-color: #fff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+    padding-left: -15px;
+    padding-right: -15px;
+    margin-top: 0px;
+}
+
+.nav-a {
+    align-items: right;
+    text-align: right;
+    color: black;
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 24px;
+    font-weight: 300;
+    float: right;
+}
+
+.navbar p {
+    align-items: left;
+    color: black;
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 24px;
+}
+
+.nav-logo {
+    align-items: left;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 24px;
+    font-weight: 500;
+    float: left;
+}
+
+.nav-a:hover {
+    color: #6f5392;
+}
+
+/**
+* About Section
+**/
+/* about section */
+.about {
+    column-count: 2;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.about-text {
+    margin-bottom: 1rem; /* or 16px, adjust as needed */
+    max-width: 30rem;
+}
+.about-img {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 260px;
+}
