@@ -499,3 +499,9 @@ img {
     width: 450px;
   }
 }
+
+@media (max-width:935px) {
+  .home__img {
+    display: none;
+  }
+}
